@@ -1,0 +1,159 @@
+/*Importação da Fonte*/
+/* Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Body */
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+/* Fontes */
+h1 {
+    font-family: "Inter", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    /* Usar 400 para "regular" */
+    color: #6B8E23;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    /* Usar 600 para "SemiBold" */
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Mantém a cor do elemento pai */
+}
+
+/* Container */
+.container {
+    background-color: #000000;
+    margin: 50px auto;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    background-color: #1C1C1C;
+    padding: 50px;
+    text-align: center;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Imagem */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Lista de Redes Sociais */
+.lista-redes {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Botões Sociais */
+.btn-social {
+    font-family: "Inter", sans-serif;
+    width: 350px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4F4F4F;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-social:hover {
+    background-color: #6B8E23;
+}
+
+/* Footer */
+.footer .container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer {
+    background-color: #1C1C1C;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Atribuição */
+.attribution {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgb(235, 235, 235);
+    font-size: 16px;
+    text-align: center;
+}
+
+/*Responsividade*/
+@media (max-width: 767px) {
+
+    /* Estilos para smartphones */
+    .container {
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+    .container {
+        margin: 30px;
+        padding: 60px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
